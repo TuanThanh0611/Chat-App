@@ -1,0 +1,358 @@
+2024-11-04T19:52:34.661+07:00  INFO 25415 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : Starting ChatAppApplication using Java 21.0.4 with PID 25415 (/home/ivo/dev/project/web/Chat-App/target/classes started by ivo in /home/ivo/dev/project/web/Chat-App)
+2024-11-04T19:52:34.663+07:00  INFO 25415 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-11-04T19:52:35.178+07:00  INFO 25415 --- [Chat-App] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-04T19:52:35.186+07:00  INFO 25415 --- [Chat-App] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-04T19:52:35.186+07:00  INFO 25415 --- [Chat-App] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-04T19:52:35.211+07:00  INFO 25415 --- [Chat-App] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-04T19:52:35.211+07:00  INFO 25415 --- [Chat-App] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 509 ms
+2024-11-04T19:52:35.313+07:00 DEBUG 25415 --- [Chat-App] [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-11-04T19:52:35.341+07:00 DEBUG 25415 --- [Chat-App] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.i.C.c.ChatController:
+	{[MESSAGE],[/chat.addUser]}: addUser(ChatMessage,SimpMessageHeaderAccessor)
+	{[MESSAGE],[/chat.sendMessage]}: sendMessage(ChatMessage)
+2024-11-04T19:52:35.345+07:00 DEBUG 25415 --- [Chat-App] [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-11-04T19:52:35.363+07:00  INFO 25415 --- [Chat-App] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-11-04T19:52:35.386+07:00 DEBUG 25415 --- [Chat-App] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-11-04T19:52:35.402+07:00 DEBUG 25415 --- [Chat-App] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-04T19:52:35.413+07:00 DEBUG 25415 --- [Chat-App] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-04T19:52:35.431+07:00 DEBUG 25415 --- [Chat-App] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-04T19:52:35.477+07:00  INFO 25415 --- [Chat-App] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-04T19:52:35.479+07:00 DEBUG 25415 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-11-04T19:52:35.479+07:00 DEBUG 25415 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-11-04T19:52:35.479+07:00  INFO 25415 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-11-04T19:52:35.480+07:00 DEBUG 25415 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]
+2024-11-04T19:52:35.480+07:00 DEBUG 25415 --- [Chat-App] [main] org.springframework.web.SimpLogging      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]
+2024-11-04T19:52:35.480+07:00  INFO 25415 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]]
+2024-11-04T19:52:35.480+07:00  INFO 25415 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-11-04T19:52:35.480+07:00 DEBUG 25415 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T19:52:35.481+07:00 DEBUG 25415 --- [Chat-App] [main] org.springframework.web.SimpLogging      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T19:52:35.485+07:00  INFO 25415 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : Started ChatAppApplication in 1.112 seconds (process running for 1.507)
+2024-11-04T19:53:35.470+07:00  INFO 25415 --- [Chat-App] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-11-04T19:55:11.961+07:00 DEBUG 25415 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-11-04T19:55:11.962+07:00 DEBUG 25415 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-11-04T19:55:11.962+07:00  INFO 25415 --- [Chat-App] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-11-04T19:55:11.962+07:00  INFO 25415 --- [Chat-App] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]]
+2024-11-04T19:55:11.962+07:00 DEBUG 25415 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]
+2024-11-04T19:55:11.962+07:00 DEBUG 25415 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]
+2024-11-04T19:55:11.962+07:00  INFO 25415 --- [Chat-App] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-11-04T19:55:11.962+07:00 DEBUG 25415 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T19:55:11.962+07:00 DEBUG 25415 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:18:06.654+07:00  INFO 9028 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : Starting ChatAppApplication using Java 21.0.5 with PID 9028 (/home/ivo/dev/project/web/Chat-App/target/classes started by ivo in /home/ivo/dev/project/web/Chat-App)
+2024-11-04T20:18:06.656+07:00  INFO 9028 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-11-04T20:18:07.223+07:00  INFO 9028 --- [Chat-App] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-04T20:18:07.232+07:00  INFO 9028 --- [Chat-App] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-04T20:18:07.232+07:00  INFO 9028 --- [Chat-App] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-04T20:18:07.258+07:00  INFO 9028 --- [Chat-App] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-04T20:18:07.259+07:00  INFO 9028 --- [Chat-App] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 574 ms
+2024-11-04T20:18:07.376+07:00 DEBUG 9028 --- [Chat-App] [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-11-04T20:18:07.407+07:00 DEBUG 9028 --- [Chat-App] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.i.C.c.ChatController:
+	{[MESSAGE],[/chat.sendMessage]}: sendMessage(ChatMessage)
+	{[MESSAGE],[/chat.addUser]}: addUser(ChatMessage,SimpMessageHeaderAccessor)
+2024-11-04T20:18:07.411+07:00 DEBUG 9028 --- [Chat-App] [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-11-04T20:18:07.429+07:00  INFO 9028 --- [Chat-App] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-11-04T20:18:07.458+07:00 DEBUG 9028 --- [Chat-App] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-11-04T20:18:07.476+07:00 DEBUG 9028 --- [Chat-App] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-04T20:18:07.486+07:00 DEBUG 9028 --- [Chat-App] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-04T20:18:07.506+07:00 DEBUG 9028 --- [Chat-App] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-04T20:18:07.554+07:00  INFO 9028 --- [Chat-App] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-04T20:18:07.556+07:00 DEBUG 9028 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-11-04T20:18:07.556+07:00 DEBUG 9028 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-11-04T20:18:07.556+07:00  INFO 9028 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-11-04T20:18:07.556+07:00 DEBUG 9028 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]
+2024-11-04T20:18:07.556+07:00 DEBUG 9028 --- [Chat-App] [main] org.springframework.web.SimpLogging      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]
+2024-11-04T20:18:07.557+07:00  INFO 9028 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]]
+2024-11-04T20:18:07.557+07:00  INFO 9028 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-11-04T20:18:07.557+07:00 DEBUG 9028 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:18:07.557+07:00 DEBUG 9028 --- [Chat-App] [main] org.springframework.web.SimpLogging      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:18:07.561+07:00  INFO 9028 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : Started ChatAppApplication in 1.199 seconds (process running for 1.647)
+2024-11-04T20:18:18.567+07:00  INFO 9028 --- [Chat-App] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04T20:18:18.567+07:00  INFO 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-04T20:18:18.567+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-04T20:18:18.567+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-04T20:18:18.567+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-04T20:18:18.568+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@401c32f7
+2024-11-04T20:18:18.568+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5f7af388
+2024-11-04T20:18:18.568+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-04T20:18:18.568+07:00  INFO 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-04T20:18:18.574+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-11-04T20:18:18.584+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/png, image/svg+xml, application/xml;q=0.9, */*;q=0.8]
+2024-11-04T20:18:18.584+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.servlet.view.InternalResourceView  : View name [forward:], model {}
+2024-11-04T20:18:18.586+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2024-11-04T20:18:18.588+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2024-11-04T20:18:18.590+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:18.596+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2024-11-04T20:18:18.597+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-04T20:18:18.612+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2024-11-04T20:18:18.612+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:18.614+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/main.js", parameters={}
+2024-11-04T20:18:18.614+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-04T20:18:18.614+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:18.615+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-11-04T20:18:18.617+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource js/main.js.]
+2024-11-04T20:18:18.617+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-11-04T20:18:18.617+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-11-04T20:18:18.618+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-04T20:18:18.634+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-04T20:18:18.636+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 04 20:18:18 ICT 2024, status=404, error=Not Found, path=/js/main.js}]
+2024-11-04T20:18:18.656+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-11-04T20:18:18.785+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/js/main.js", parameters={}
+2024-11-04T20:18:18.786+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:18.786+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-11-04T20:18:18.786+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource js/main.js.]
+2024-11-04T20:18:18.786+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-11-04T20:18:18.787+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-11-04T20:18:18.787+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-04T20:18:18.788+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-04T20:18:18.788+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 04 20:18:18 ICT 2024, status=404, error=Not Found, path=/js/main.js}]
+2024-11-04T20:18:18.789+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-11-04T20:18:18.791+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2024-11-04T20:18:18.792+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:18.792+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-11-04T20:18:18.792+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2024-11-04T20:18:18.792+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-11-04T20:18:18.793+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-11-04T20:18:18.793+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-04T20:18:18.793+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.5', given [image/avif, image/webp, image/png, image/svg+xml, image/*;q=0.8, */*;q=0.5] and supported [application/json, application/*+json]
+2024-11-04T20:18:18.794+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 04 20:18:18 ICT 2024, status=404, error=Not Found, path=/favicon.ico}]
+2024-11-04T20:18:18.796+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-11-04T20:18:21.574+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-11-04T20:18:21.575+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/png, image/svg+xml, application/xml;q=0.9, */*;q=0.8]
+2024-11-04T20:18:21.576+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-6] o.s.w.servlet.view.InternalResourceView  : View name [forward:], model {}
+2024-11-04T20:18:21.576+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-6] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2024-11-04T20:18:21.576+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2024-11-04T20:18:21.576+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:21.577+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2024-11-04T20:18:21.578+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-04T20:18:21.596+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2024-11-04T20:18:21.597+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/js/main.js", parameters={}
+2024-11-04T20:18:21.597+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:21.597+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:21.598+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-11-04T20:18:21.598+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource js/main.js.]
+2024-11-04T20:18:21.598+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-11-04T20:18:21.598+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-11-04T20:18:21.598+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-11-04T20:18:21.599+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-04T20:18:21.599+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-04T20:18:21.599+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 04 20:18:21 ICT 2024, status=404, error=Not Found, path=/js/main.js}]
+2024-11-04T20:18:21.600+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-11-04T20:18:21.605+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/js/main.js", parameters={}
+2024-11-04T20:18:21.606+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:21.606+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-11-04T20:18:21.606+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource js/main.js.]
+2024-11-04T20:18:21.606+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-11-04T20:18:21.607+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-11-04T20:18:21.607+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-04T20:18:21.607+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-04T20:18:21.607+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 04 20:18:21 ICT 2024, status=404, error=Not Found, path=/js/main.js}]
+2024-11-04T20:18:21.608+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-11-04T20:18:22.261+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-11-04T20:18:22.262+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/png, image/svg+xml, application/xml;q=0.9, */*;q=0.8]
+2024-11-04T20:18:22.262+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-10] o.s.w.servlet.view.InternalResourceView  : View name [forward:], model {}
+2024-11-04T20:18:22.262+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-10] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2024-11-04T20:18:22.263+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2024-11-04T20:18:22.263+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:22.263+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 304
+2024-11-04T20:18:22.264+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-11-04T20:18:22.282+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2024-11-04T20:18:22.283+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/js/main.js", parameters={}
+2024-11-04T20:18:22.283+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:22.283+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:22.284+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-11-04T20:18:22.284+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-11-04T20:18:22.284+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource js/main.js.]
+2024-11-04T20:18:22.284+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-11-04T20:18:22.284+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-11-04T20:18:22.284+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-04T20:18:22.285+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-04T20:18:22.285+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 04 20:18:22 ICT 2024, status=404, error=Not Found, path=/js/main.js}]
+2024-11-04T20:18:22.286+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-11-04T20:18:22.291+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/main.js", parameters={}
+2024-11-04T20:18:22.291+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:18:22.292+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-11-04T20:18:22.292+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource js/main.js.]
+2024-11-04T20:18:22.292+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-11-04T20:18:22.292+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-11-04T20:18:22.293+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2024-11-04T20:18:22.293+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-11-04T20:18:22.293+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Mon Nov 04 20:18:22 ICT 2024, status=404, error=Not Found, path=/js/main.js}]
+2024-11-04T20:18:22.294+07:00 DEBUG 9028 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-11-04T20:19:07.547+07:00  INFO 9028 --- [Chat-App] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2024-11-04T20:20:48.906+07:00 DEBUG 9028 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-11-04T20:20:48.906+07:00 DEBUG 9028 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-11-04T20:20:48.906+07:00  INFO 9028 --- [Chat-App] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-11-04T20:20:48.906+07:00  INFO 9028 --- [Chat-App] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]]
+2024-11-04T20:20:48.906+07:00 DEBUG 9028 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]
+2024-11-04T20:20:48.906+07:00 DEBUG 9028 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@2be21396]
+2024-11-04T20:20:48.906+07:00  INFO 9028 --- [Chat-App] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-11-04T20:20:48.906+07:00 DEBUG 9028 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:20:48.906+07:00 DEBUG 9028 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:20:50.328+07:00  INFO 9402 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : Starting ChatAppApplication using Java 21.0.5 with PID 9402 (/home/ivo/dev/project/web/Chat-App/target/classes started by ivo in /home/ivo/dev/project/web/Chat-App)
+2024-11-04T20:20:50.330+07:00  INFO 9402 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-11-04T20:20:50.843+07:00  INFO 9402 --- [Chat-App] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-04T20:20:50.855+07:00  INFO 9402 --- [Chat-App] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-04T20:20:50.855+07:00  INFO 9402 --- [Chat-App] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-04T20:20:50.887+07:00  INFO 9402 --- [Chat-App] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-04T20:20:50.888+07:00  INFO 9402 --- [Chat-App] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 527 ms
+2024-11-04T20:20:50.987+07:00 DEBUG 9402 --- [Chat-App] [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-11-04T20:20:51.014+07:00 DEBUG 9402 --- [Chat-App] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.i.C.c.ChatController:
+	{[MESSAGE],[/chat.sendMessage]}: sendMessage(ChatMessage)
+	{[MESSAGE],[/chat.addUser]}: addUser(ChatMessage,SimpMessageHeaderAccessor)
+2024-11-04T20:20:51.018+07:00 DEBUG 9402 --- [Chat-App] [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-11-04T20:20:51.035+07:00  INFO 9402 --- [Chat-App] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-11-04T20:20:51.063+07:00 DEBUG 9402 --- [Chat-App] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-11-04T20:20:51.082+07:00 DEBUG 9402 --- [Chat-App] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-04T20:20:51.091+07:00 DEBUG 9402 --- [Chat-App] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-04T20:20:51.108+07:00 DEBUG 9402 --- [Chat-App] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-04T20:20:51.152+07:00  INFO 9402 --- [Chat-App] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-04T20:20:51.153+07:00 DEBUG 9402 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-11-04T20:20:51.153+07:00 DEBUG 9402 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-11-04T20:20:51.153+07:00  INFO 9402 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-11-04T20:20:51.154+07:00 DEBUG 9402 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5a545b0f]
+2024-11-04T20:20:51.154+07:00 DEBUG 9402 --- [Chat-App] [main] org.springframework.web.SimpLogging      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5a545b0f]
+2024-11-04T20:20:51.154+07:00  INFO 9402 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5a545b0f]]
+2024-11-04T20:20:51.154+07:00  INFO 9402 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-11-04T20:20:51.154+07:00 DEBUG 9402 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:20:51.154+07:00 DEBUG 9402 --- [Chat-App] [main] org.springframework.web.SimpLogging      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:20:51.158+07:00  INFO 9402 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : Started ChatAppApplication in 1.078 seconds (process running for 1.442)
+2024-11-04T20:21:00.863+07:00  INFO 9402 --- [Chat-App] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04T20:21:00.863+07:00  INFO 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-04T20:21:00.863+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-04T20:21:00.864+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-04T20:21:00.864+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-04T20:21:00.864+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3fad4e33
+2024-11-04T20:21:00.864+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2544468f
+2024-11-04T20:21:00.865+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-04T20:21:00.865+07:00  INFO 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-11-04T20:21:00.871+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-11-04T20:21:00.882+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/png, image/svg+xml, application/xml;q=0.9, */*;q=0.8]
+2024-11-04T20:21:00.883+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.servlet.view.InternalResourceView  : View name [forward:], model {}
+2024-11-04T20:21:00.884+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2024-11-04T20:21:00.886+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2024-11-04T20:21:00.888+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:21:00.895+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2024-11-04T20:21:00.896+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-04T20:21:00.927+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2024-11-04T20:21:00.928+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:21:00.929+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-04T20:21:00.929+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/js/main.js", parameters={}
+2024-11-04T20:21:00.930+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:21:00.930+07:00 DEBUG 9402 --- [Chat-App] [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-04T20:21:11.422+07:00 DEBUG 9402 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientOutboundChannel removed SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-11-04T20:21:11.423+07:00 DEBUG 9402 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-11-04T20:21:11.423+07:00  INFO 9402 --- [Chat-App] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2024-11-04T20:21:11.423+07:00  INFO 9402 --- [Chat-App] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5a545b0f]]
+2024-11-04T20:21:11.423+07:00 DEBUG 9402 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5a545b0f]
+2024-11-04T20:21:11.423+07:00 DEBUG 9402 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5a545b0f]
+2024-11-04T20:21:11.423+07:00  INFO 9402 --- [Chat-App] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2024-11-04T20:21:11.423+07:00 DEBUG 9402 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : clientInboundChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:21:11.423+07:00 DEBUG 9402 --- [Chat-App] [SpringApplicationShutdownHook] org.springframework.web.SimpLogging      : brokerChannel removed UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:21:12.792+07:00  INFO 9589 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : Starting ChatAppApplication using Java 21.0.5 with PID 9589 (/home/ivo/dev/project/web/Chat-App/target/classes started by ivo in /home/ivo/dev/project/web/Chat-App)
+2024-11-04T20:21:12.794+07:00  INFO 9589 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2024-11-04T20:21:13.304+07:00  INFO 9589 --- [Chat-App] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2024-11-04T20:21:13.313+07:00  INFO 9589 --- [Chat-App] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-04T20:21:13.313+07:00  INFO 9589 --- [Chat-App] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-11-04T20:21:13.338+07:00  INFO 9589 --- [Chat-App] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-04T20:21:13.338+07:00  INFO 9589 --- [Chat-App] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 517 ms
+2024-11-04T20:21:13.438+07:00 DEBUG 9589 --- [Chat-App] [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/ws/**] in 'stompWebSocketHandlerMapping'
+2024-11-04T20:21:13.466+07:00 DEBUG 9589 --- [Chat-App] [main] .WebSocketAnnotationMethodMessageHandler : 
+	c.i.C.c.ChatController:
+	{[MESSAGE],[/chat.sendMessage]}: sendMessage(ChatMessage)
+	{[MESSAGE],[/chat.addUser]}: addUser(ChatMessage,SimpMessageHeaderAccessor)
+2024-11-04T20:21:13.469+07:00 DEBUG 9589 --- [Chat-App] [main] .WebSocketAnnotationMethodMessageHandler : 
+	o.s.b.a.w.s.e.BasicErrorController:
+	
+2024-11-04T20:21:13.486+07:00  INFO 9589 --- [Chat-App] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-11-04T20:21:13.508+07:00 DEBUG 9589 --- [Chat-App] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2024-11-04T20:21:13.524+07:00 DEBUG 9589 --- [Chat-App] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-11-04T20:21:13.534+07:00 DEBUG 9589 --- [Chat-App] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-11-04T20:21:13.551+07:00 DEBUG 9589 --- [Chat-App] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-11-04T20:21:13.595+07:00  INFO 9589 --- [Chat-App] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2024-11-04T20:21:13.596+07:00 DEBUG 9589 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientOutboundChannel added SubProtocolWebSocketHandler[StompSubProtocolHandler[v10.stomp, v11.stomp, v12.stomp]]
+2024-11-04T20:21:13.596+07:00 DEBUG 9589 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added WebSocketAnnotationMethodMessageHandler[prefixes=[/app/]]
+2024-11-04T20:21:13.597+07:00  INFO 9589 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-11-04T20:21:13.597+07:00 DEBUG 9589 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@40247d48]
+2024-11-04T20:21:13.597+07:00 DEBUG 9589 --- [Chat-App] [main] org.springframework.web.SimpLogging      : brokerChannel added SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@40247d48]
+2024-11-04T20:21:13.597+07:00  INFO 9589 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@40247d48]]
+2024-11-04T20:21:13.597+07:00  INFO 9589 --- [Chat-App] [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-11-04T20:21:13.598+07:00 DEBUG 9589 --- [Chat-App] [main] org.springframework.web.SimpLogging      : clientInboundChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:21:13.598+07:00 DEBUG 9589 --- [Chat-App] [main] org.springframework.web.SimpLogging      : brokerChannel added UserDestinationMessageHandler[DefaultUserDestinationResolver[prefix=/user/]]
+2024-11-04T20:21:13.602+07:00  INFO 9589 --- [Chat-App] [main] com.ivo.Chat_App.ChatAppApplication      : Started ChatAppApplication in 1.073 seconds (process running for 1.458)
+2024-11-04T20:21:23.575+07:00  INFO 9589 --- [Chat-App] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-04T20:21:23.576+07:00  INFO 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-11-04T20:21:23.576+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-11-04T20:21:23.576+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-11-04T20:21:23.576+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-11-04T20:21:23.577+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4e5aaf1
+2024-11-04T20:21:23.577+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@738620ab
+2024-11-04T20:21:23.577+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-11-04T20:21:23.577+07:00  INFO 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-11-04T20:21:23.582+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/ws/info?t=1730726483540", parameters={masked}
+2024-11-04T20:21:23.587+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@378f002a
+2024-11-04T20:21:23.594+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8081/ws/info?t=1730726483540
+2024-11-04T20:21:23.597+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-04T20:21:23.603+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/ws/864/w3t5x2ch/websocket", parameters={}
+2024-11-04T20:21:23.603+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@378f002a
+2024-11-04T20:21:23.606+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-2] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8081/ws/864/w3t5x2ch/websocket
+2024-11-04T20:21:23.626+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 101 SWITCHING_PROTOCOLS
+2024-11-04T20:21:23.633+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New WebSocketServerSockJsSession[id=w3t5x2ch]
+2024-11-04T20:21:23.652+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-2] org.springframework.web.SimpLogging      : Processing CONNECT session=w3t5x2ch
+2024-11-04T20:21:23.658+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-5] org.springframework.web.SimpLogging      : Processing SUBSCRIBE /topic/public id=sub-0 session=w3t5x2ch
+2024-11-04T20:21:23.659+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-7] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /app/chat.addUser session=w3t5x2ch, lookupDestination='/chat.addUser'
+2024-11-04T20:21:23.661+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-7] .WebSocketAnnotationMethodMessageHandler : Invoking ChatController#addUser[2 args]
+2024-11-04T20:21:23.695+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-7] org.springframework.web.SimpLogging      : Processing MESSAGE destination=/topic/public session=w3t5x2ch payload={"sender":"h","content":null,"type":"JOIN"}
+2024-11-04T20:21:23.696+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-7] org.springframework.web.SimpLogging      : Broadcasting to 1 sessions.
+2024-11-04T20:21:30.535+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-10] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /app/chat.sendMessage session=w3t5x2ch, lookupDestination='/chat.sendMessage'
+2024-11-04T20:21:30.536+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-10] .WebSocketAnnotationMethodMessageHandler : Invoking ChatController#sendMessage[1 args]
+2024-11-04T20:21:30.536+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-10] org.springframework.web.SimpLogging      : Processing MESSAGE destination=/topic/public session=w3t5x2ch payload={"sender":"h","content":"meme","type":"CHAT"}
+2024-11-04T20:21:30.537+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-10] org.springframework.web.SimpLogging      : Broadcasting to 1 sessions.
+2024-11-04T20:21:40.021+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2024-11-04T20:21:40.025+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/png, image/svg+xml, application/xml;q=0.9, */*;q=0.8]
+2024-11-04T20:21:40.025+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-5] o.s.w.servlet.view.InternalResourceView  : View name [forward:], model {}
+2024-11-04T20:21:40.026+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-5] o.s.w.servlet.view.InternalResourceView  : Forwarding to [index.html]
+2024-11-04T20:21:40.028+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : "FORWARD" dispatch for GET "/index.html", parameters={}
+2024-11-04T20:21:40.029+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:21:40.032+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "FORWARD" dispatch, status 200
+2024-11-04T20:21:40.032+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-04T20:21:40.055+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/main.css", parameters={}
+2024-11-04T20:21:40.056+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:21:40.056+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/js/main.js", parameters={}
+2024-11-04T20:21:40.056+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-11-04T20:21:40.057+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-11-04T20:21:40.057+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-11-04T20:21:44.677+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/ws/info?t=1730726504675", parameters={masked}
+2024-11-04T20:21:44.678+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-8] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@378f002a
+2024-11-04T20:21:44.678+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-8] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8081/ws/info?t=1730726504675
+2024-11-04T20:21:44.679+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-11-04T20:21:44.682+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/ws/705/eoucnmrb/websocket", parameters={}
+2024-11-04T20:21:44.683+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-9] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.sockjs.support.SockJsHttpRequestHandler@378f002a
+2024-11-04T20:21:44.683+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-9] o.s.w.s.s.t.h.DefaultSockJsService       : Processing transport request: GET http://localhost:8081/ws/705/eoucnmrb/websocket
+2024-11-04T20:21:44.684+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 101 SWITCHING_PROTOCOLS
+2024-11-04T20:21:44.684+07:00 DEBUG 9589 --- [Chat-App] [http-nio-8081-exec-9] s.w.s.h.LoggingWebSocketHandlerDecorator : New WebSocketServerSockJsSession[id=eoucnmrb]
+2024-11-04T20:21:44.686+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-14] org.springframework.web.SimpLogging      : Processing CONNECT session=eoucnmrb
+2024-11-04T20:21:44.687+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-17] org.springframework.web.SimpLogging      : Processing SUBSCRIBE /topic/public id=sub-0 session=eoucnmrb
+2024-11-04T20:21:44.688+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-19] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /app/chat.addUser session=eoucnmrb, lookupDestination='/chat.addUser'
+2024-11-04T20:21:44.688+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-19] .WebSocketAnnotationMethodMessageHandler : Invoking ChatController#addUser[2 args]
+2024-11-04T20:21:44.688+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-19] org.springframework.web.SimpLogging      : Processing MESSAGE destination=/topic/public session=eoucnmrb payload={"sender":"húp","content":null,"type":"JOIN"}
+2024-11-04T20:21:44.688+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-19] org.springframework.web.SimpLogging      : Broadcasting to 2 sessions.
+2024-11-04T20:21:50.112+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-22] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /app/chat.sendMessage session=w3t5x2ch, lookupDestination='/chat.sendMessage'
+2024-11-04T20:21:50.113+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-22] .WebSocketAnnotationMethodMessageHandler : Invoking ChatController#sendMessage[1 args]
+2024-11-04T20:21:50.113+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-22] org.springframework.web.SimpLogging      : Processing MESSAGE destination=/topic/public session=w3t5x2ch payload={"sender":"h","content":"hihi","type":"CHAT"}
+2024-11-04T20:21:50.113+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-22] org.springframework.web.SimpLogging      : Broadcasting to 2 sessions.
+2024-11-04T20:21:55.372+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-1] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /app/chat.sendMessage session=eoucnmrb, lookupDestination='/chat.sendMessage'
+2024-11-04T20:21:55.373+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-1] .WebSocketAnnotationMethodMessageHandler : Invoking ChatController#sendMessage[1 args]
+2024-11-04T20:21:55.373+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-1] org.springframework.web.SimpLogging      : Processing MESSAGE destination=/topic/public session=eoucnmrb payload={"sender":"húp","content":"eeeee","type":"CHAT"}
+2024-11-04T20:21:55.381+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-1] org.springframework.web.SimpLogging      : Broadcasting to 2 sessions.
+2024-11-04T20:22:03.227+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-4] .WebSocketAnnotationMethodMessageHandler : Searching methods to handle SEND /app/chat.sendMessage session=eoucnmrb, lookupDestination='/chat.sendMessage'
+2024-11-04T20:22:03.228+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-4] .WebSocketAnnotationMethodMessageHandler : Invoking ChatController#sendMessage[1 args]
+2024-11-04T20:22:03.229+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-4] org.springframework.web.SimpLogging      : Processing MESSAGE destination=/topic/public session=eoucnmrb payload={"sender":"húp","content":"meomeo meo","type":"CHAT"}
+2024-11-04T20:22:03.229+07:00 DEBUG 9589 --- [Chat-App] [clientInboundChannel-4] org.springframework.web.SimpLogging      : Broadcasting to 2 sessions.
+2024-11-04T20:22:13.591+07:00  INFO 9589 --- [Chat-App] [MessageBroker-12] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[2 current WS(2)-HttpStream(0)-HttpPoll(0), 2 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(2)-CONNECTED(2)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 24, active threads = 0, queued tasks = 0, completed tasks = 30], outboundChannel[pool size = 12, active threads = 0, queued tasks = 0, completed tasks = 12], sockJsScheduler[pool size = 12, active threads = 1, queued tasks = 3, completed tasks = 10]
